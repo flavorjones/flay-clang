@@ -1,11 +1,11 @@
 require 'test_helper'
 
-class Flay::ClangTest < Minitest::Test
-  def test_that_it_has_a_version_number
-    refute_nil ::Flay::Clang::VERSION
+describe Flay::Clang do
+  it "has a version number" do
+    ::Flay::Clang::VERSION.wont_be_nil
   end
 
-  def test_it_does_something_useful
-    assert false
+  it "does something useful" do
+    fail
   end
 end
