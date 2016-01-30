@@ -1,7 +1,7 @@
 require "flay/clang/version"
 
-module Flay
-  module Clang
-    # Your code goes here...
+class Flay
+  def process_c filename
+    File.read filename
   end
 end
