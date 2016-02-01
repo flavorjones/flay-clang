@@ -1,8 +1,6 @@
-
-#include <stdio>
-
-int simple_method(int foo)
+int simple_method(int foo, int bar)
 {
-  printf(stderr, "%s is %d", "argument", foo);
-  return 0;
+  int value = 0;
+  value = foo * bar * 2 ;
+  return value ;
 }

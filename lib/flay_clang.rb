@@ -1,7 +1,8 @@
-require "flay"
+require "flay" # prerequisite
 require "flay/clang"
 
 class Flay
-  include Flay::Clang
+  def process_c filename
+    Clang.sexp_for(filename)
+  end
 end
-
